@@ -1,0 +1,4 @@
+server/node_modules/
+client/iDream/node_modules/
+server/.git/
+server/.gitignore

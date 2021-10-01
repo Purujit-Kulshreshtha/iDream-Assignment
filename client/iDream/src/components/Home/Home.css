@@ -1,0 +1,154 @@
+.home-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+
+.form-container{
+	height: 75vh;
+	width: 35%;
+	padding: 2rem;
+	background: var(--background);
+	border: 2px solid rgba(26, 59, 88, 0.24);
+	border-radius: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.tabs-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 3rem;
+	width: 25%;
+}
+
+.tab{
+	color: rgba(26, 59, 88, 0.33);
+	border: none;
+	background: var(--background);
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.tab-active{
+	color: var(--text-blue);
+	color: var(--text-blue);
+	border: none;
+	background: var(--background);
+	font-weight: bolder;
+	position: relative;
+}
+
+.tab-active::after{
+	content: "";
+	width: 25px;
+	height: 3px;
+	background: var(--text-blue);
+	position: absolute;
+	left: 0;
+	top: 100%;
+}
+
+.form-element{
+	height: 20rem;
+	align-self: center;
+}
+
+.signin-form{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 100%;
+	border-top: solid 2px #4091DF;
+}
+
+.form-heading{
+	align-self: flex-start;
+	font-weight: bolder;
+	color: var(--text-blue);
+}
+
+.form-sub{
+	color: #999;
+}
+
+.input{
+	background: var(--background);
+	border: 1px solid #CBDBEA;
+	border-radius: 8px;
+	width: 314px;
+	height: 45px;
+	font-size: 14px;
+	padding-left: 1rem;
+}
+
+.input-alert{
+	background: #FFFFFF;
+	border: 1px solid #F65B2A;
+	border-radius: 8px;
+	width: 314px;
+	height: 45px;
+	font-size: 14px;
+	padding-left: 1rem;
+}
+
+.error-message{
+	color: #F65B2A;
+	font-size: 0.75rem;
+	align-self: center;
+}
+
+.btn-submit{
+	background: #329C89;
+	width: 100%;
+	height: 45px;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.btn-submit:hover{
+	filter: brightness(80%);
+}
+
+.remember-me-check{
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: #999;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+.remember-me-check:checked{
+	background: #329C89
+}
+.remember-me-check::after{
+	font-weight: 900;
+	content: "√";
+	font-size: 20px;
+	color: white;
+	left: 3px;
+	top: -3px;
+	position: relative;
+}
+
+.password-div{
+	position: relative;
+}
+
+.eye{
+	cursor: pointer;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 25%;
+	right: 10px;
+}
