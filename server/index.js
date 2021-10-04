@@ -13,7 +13,7 @@ app.use(cors())
 app.use('/users', userRouter);
 
 const PORT = process.env.PORT || 5000;
-const DATABASEURI = "mongodb+srv://purujit:iDreamPassword@idream.rxyrv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const DATABASEURI = //mongoDB Atlas URI Here
 
 mongoose.connect(DATABASEURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
 		app.listen(PORT, () => console.log(`Server running: ${PORT}`))
